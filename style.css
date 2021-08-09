@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/backgporti.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*------IMAGENS HEADER------  */
+
+.img2{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.img1{
+  position: absolute;
+  margin-left: 850px;
+  margin-top: 40px;
+}
+
+/*----- MENU-----*/
+
+a{
+  color: #532145;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family:Arial, Helvetica, sans-serif;
+  background: rgba(197, 196, 198, 1);
+  height: 10vh;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li{
+  letter-spacing: 3px;
+  margin-left: 100px;
+}
+
+.mobile-menu{
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div{
+  width: 32px;
+  height: 2px;
+  background: #532145;
+  margin: 8px;
+  transition: 0.4s;
+}
+
+@media (max-width: 850px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+
+  .nav-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 100vw;
+    height: 92vh;
+    background: #532145;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in;
+  }
+
+  a{
+    color: #fff;
+  }
+  .nav-list li{
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu{
+    display: block;
+  }
+}
+
+
+.nav-list.active{
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1{
+  transform: rotate(-45deg) translate(-8px, 8px)
+}
+
+.mobile-menu.active .line2{
+  opacity: 0;
+}
+.mobile-menu.active .line3{
+  transform: rotate(45deg) translate(-5px, -7px)
+} /* ------ FIM DO MENU ------*/
+
+/*------ QUEM ------*/
+
+.quem{
+  background:#f4dcfc;
+  display: flex;
+}
+
+.textos{
+  color: #20131d;
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.textos h1{
+  margin-bottom: 40px;
+}
+
+.textos p{
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+/*------ FIM ------*/
+
+.bg2{
+  background-image: url("./assets/bgpurple4.jpg");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*------ PROJETOS ------*/
+
+.projetos{
+  background: #eccff7;
+  height: 105vh;
+}
+
+.projetos h1{
+  color: #20131d;
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.projtos .prjts{
+  display: flex;
+}
+
+.prjts h2{
+  padding: 5px;
+  color: #20131d;
+  align-items: center;
+  text-align: center;
+}
+
+.prjts p{
+  font-size: 17px;
+}
+
+.prjts a{
+  margin-left: 12px;
+}
+
+.prjts .p1{
+  position: absolute;
+  margin-left: 120px;
+  align-items: center;
+  padding: 10px;
+
+  border-width: medium;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.prjts .p2{
+  margin-left: 530px;
+  position: absolute;
+  padding: 10px;
+  
+  border-width: medium;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.prjts .p3{
+  margin-left: 940px;
+  padding: 10px;
+
+  border-width: medium;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.prjts .t2{
+  font-size: 12px;
+  margin-left: 85px;
+}
+
+/*---- FIM PROJETOS COM IMAGEM ----*/
+
+/*------BG 3------*/
+
+.bg3{
+  background-image: url("./assets/bgpurple5.jpg");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*------CONTATO------*/
+
+.contatos{
+    background:#dab3e9;
+}
+
+.contatos h1{
+  color: #20131d;
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.contatos .ctts{
+  margin-left: 230px;
+  padding: 40px;
+}
+
+.contatos .ctts a{
+  padding:  0 20px 0 20px;
+}
